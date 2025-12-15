@@ -223,8 +223,9 @@
       <!-- Twitch Live -->
       <div>
         <h4 style="margin-bottom:15px;">Twitch</h4>
+        <!-- OBS: el parámetro parent debe ser exactamente el dominio (sin ruta) desde el que se sirve la página -->
         <iframe
-          src="https://player.twitch.tv/?channel=dolapeee&parent=maguillon73.github.io/dolapeee/"
+          src="https://player.twitch.tv/?channel=dolapeee&parent=maguillon73.github.io"
           height="300"
           width="500"
           allowfullscreen>
@@ -234,13 +235,10 @@
       <!-- Kick Live -->
       <div>
         <h4 style="margin-bottom:15px;">Kick</h4>
-        <iframe
-          src="https://kick.com/dolapeee"
-          height="300"
-          width="500"
-          allowfullscreen
-          style="border:none; border-radius:16px;">
-        </iframe>
+        <!-- Muchos sitios (como Kick) no permiten ser embebidos por políticas. Abrimos en nueva pestaña en su lugar -->
+        <div style="width:500px; height:300px; display:flex; align-items:center; justify-content:center; background:#0b0b0b; border-radius:16px;">
+          <a href="https://kick.com/dolapeee" target="_blank" style="padding:12px 20px; border-radius:12px; border:1px solid #444; color:#fff; background:#111;">Abrir en Kick</a>
+        </div>
       </div>
     </div>
 
@@ -271,7 +269,7 @@
           font-weight:bold;
         "> Instagram</button>
 
-      <button onclick="window.open('https://www.tiktok.com/@dolapee2024','_blank')" 
+      <button onclick="window.open('https://www.tiktok.com/@dolapeee2024','_blank')" 
         style="
           background: linear-gradient(135deg, #25F4EE, #000000, #FE2C55);
           font-weight:bold;
@@ -286,11 +284,12 @@
 
     <div class="carousel">
   <div class="carousel-track">
-    <iframe src="https://clips.twitch.tv/embed?clip=TenaciousGlutenFreeSquidMingLee-CrEVfGrBLscrvpWp&parent" allowfullscreen></iframe>
-    <iframe src="https://clips.twitch.tv/embed?clip=RealCourageousCockroachBleedPurple-5zoRiRl1CUIGx67h&parent" allowfullscreen></iframe>
-    <iframe src="https://clips.twitch.tv/embed?clip=ResoluteCautiousWaspJonCarnage-suotPFA4_XAaSm-E&parent" allowfullscreen></iframe>
-    <iframe src="https://clips.twitch.tv/embed?clip=FrailWonderfulBunnyFeelsBadMan-6RLrIiRbhy-kLm9m&parent" allowfullscreen></iframe>
-    <iframe src="https://clips.twitch.tv/embed?clip=ProductiveHonorableGoatDoritosChip-rHer95NC2rxeO-vC&parent" allowfullscreen></iframe>
+    <!-- Cada embed de clip necesita el parámetro parent con el dominio exacto -->
+    <iframe src="https://clips.twitch.tv/embed?clip=TenaciousGlutenFreeSquidMingLee-CrEVfGrBLscrvpWp&parent=maguillon73.github.io" allowfullscreen></iframe>
+    <iframe src="https://clips.twitch.tv/embed?clip=RealCourageousCockroachBleedPurple-5zoRiRl1CUIGx67h&parent=maguillon73.github.io" allowfullscreen></iframe>
+    <iframe src="https://clips.twitch.tv/embed?clip=ResoluteCautiousWaspJonCarnage-suotPFA4_XAaSm-E&parent=maguillon73.github.io" allowfullscreen></iframe>
+    <iframe src="https://clips.twitch.tv/embed?clip=FrailWonderfulBunnyFeelsBadMan-6RLrIiRbhy-kLm9m&parent=maguillon73.github.io" allowfullscreen></iframe>
+    <iframe src="https://clips.twitch.tv/embed?clip=ProductiveHonorableGoatDoritosChip-rHer95NC2rxeO-vC&parent=maguillon73.github.io" allowfullscreen></iframe>
   </div>
 </div>
   </section>
