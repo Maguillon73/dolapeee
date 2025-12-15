@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dolapeee | Streamer</title>
+  <style>
+    /* ===== RESET BÁSICO ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    }
+
+    /* ===== IMPORTAR FUENTE GAMER ===== */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+    /* ===== ESTILOS GENERALES ===== */
+    body {
+      background-color: #000;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* ===== NAVBAR ===== */
+    header {
+      background-color: #111;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 30px;
+      letter-spacing: 3px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    nav a:hover {
+      color: #a855f7;
+      text-shadow: 0 0 10px #a855f7;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 52px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 20px rgba(168,85,247,0.6);
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+
+    /* ===== BOTONES ===== */
+    button {
+      margin-top: 30px;
+      padding: 15px 35px;
+      border: none;
+      border-radius: 40px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+    }
+
+    button:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 0 25px rgba(255,255,255,0.4);
+      filter: brightness(1.1);
+    }
+
+    /* ===== SECCIONES ===== */
+    section {
+      padding: 90px 40px;
+      text-align: center;
+    }
+
+    section h3 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    section p {
+      max-width: 750px;
+      margin: auto;
+      font-size: 19px;
+      opacity: 0.9;
+      line-height: 1.7;
+    }
+
+    /* ===== BANNER PLACEHOLDER ===== */
+    .banner {
+      width: 100%;
+      height: 300px;
+      background: linear-gradient(135deg, #111, #222);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 2px solid #a855f7;
+    }
+
+    .banner span {
+      font-size: 22px;
+      opacity: 0.7;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      .hero h2 {
+        font-size: 38px;
+      }
+    }
+  
+    /* ===== CARRUSEL ===== */
+    .carousel {
+      overflow: hidden;
+      max-width: 1000px;
+      margin: 40px auto 0;
+    }
+
+    .carousel-track {
+      display: flex;
+      gap: 30px;
+      animation: scroll 40s linear infinite;
+    }
+
+    .carousel iframe {
+      width: 420px;
+      height: 250px;
+      border: none;
+      border-radius: 16px;
+      background: #111;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+  </style>
+</head>
+<body>
+
+  
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div style="display:flex; align-items:center; gap:15px;">
+    <img src="logo.png" alt="Logo Dolapeee" style="width:48px; height:48px; border-radius:50%;">
+      <h1>Dolapeee</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#redes">Redes</a>
+    </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <main id="inicio" class="hero">
+    <h2>STREAMER DESDE LA V REGIÓN PAL MUNDO</h2>
+    <p>
+      Hola, volvimos al stream. Bienvenid@s <br><br>
+      Siéntete con la libertad de opinar lo que quieras mientras no pases a llevar
+      al resto. Aquí nos gustan los sustos, las buenas batallas, los monos chinos
+      y cazar monstruos .<br><br>
+      Siéntate y disfruta xanxit@@@@@@.
+    </p>
+    <button onclick="window.open('https://kick.com/dolapeee','_blank')" style="background-color:#22c55e;">Ver en Kick</button>
+    <button onclick="window.open('https://www.twitch.tv/dolapeee','_blank')" style="margin-left:15px; background-color:#9146FF;">Ver en Twitch</button>
+  </main>
+
+  <!-- ===== STREAM EN VIVO ===== -->
+  <section id="en-vivo">
+    <h3>EN VIVO</h3>
+    <p>Si Dolapeee está en directo, puedes verlo aquí mismo.</p>
+
+    <div style="margin-top:40px; display:flex; justify-content:center; flex-wrap:wrap; gap:40px;">
+      <!-- Twitch Live -->
+      <div>
+        <h4 style="margin-bottom:15px;">Twitch</h4>
+        <iframe
+          src="https://player.twitch.tv/?channel=dolapeee&parent=localhost"
+          height="300"
+          width="500"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- Kick Live -->
+      <div>
+        <h4 style="margin-bottom:15px;">Kick</h4>
+        <iframe
+          src="https://kick.com/dolapeee"
+          height="300"
+          width="500"
+          allowfullscreen
+          style="border:none; border-radius:16px;">
+        </iframe>
+      </div>
+    </div>
+
+    <p style="margin-top:30px; font-size:14px; opacity:0.7;">
+      Nota: Twitch requiere cambiar <b>parent=localhost</b> por tu dominio real al publicar la web.
+    </p>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section id="sobre">
+    <div style="display:flex; align-items:center; justify-content:center; gap:20px; margin-bottom:20px;">
+      <img src="logo.png" alt="Logo Dolapeee" style="width:80px; height:80px; border-radius:50%;">
+      <h3>¿Te preguntarás Dolape?</h3>
+    </div>
+    <p>
+      Sí, soy un pelao buena onda que se inició en el stream y vino para quedarse .
+      Aquí encontrarás buena vibra, risas, gameplay intenso y una comunidad que
+      crece stream tras stream.
+    </p>
+  </section>
+
+  <!-- ===== REDES ===== -->
+  <section id="redes">
+    <h3>Redes sociales</h3>
+    <p>Sígueme y apoya el contenido fuera del stream </p>
+    <div style="margin-top:30px; display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+      <button onclick="window.open('https://www.instagram.com/dolapee2024?igsh=YmU3bmE0amJ1ZWw=','_blank')" 
+        style="
+          background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+          font-weight:bold;
+        "> Instagram</button>
+
+      <button onclick="window.open('https://www.tiktok.com/@dolapee2024','_blank')" 
+        style="
+          background: linear-gradient(135deg, #25F4EE, #000000, #FE2C55);
+          font-weight:bold;
+        "> TikTok</button>
+    </div>
+  </section>
+
+  <!-- ===== CLIPS DESTACADOS ===== -->
+  <section id="clips">
+    <h3>Clips destacados</h3>
+    <p>Los mejores momentos del stream.</p>
+
+    <div class="carousel">
+      <div class="carousel-track">
+        <iframe src="https://clips.twitch.tv/embed?clip=TenaciousGlutenFreeSquidMingLee-CrEVfGrBLscrvpWp&parent=localhost" allowfullscreen></iframe>
+        <iframe src="https://clips.twitch.tv/embed?clip=RealCourageousCockroachBleedPurple-5zoRiRl1CUIGx67h&parent=localhost" allowfullscreen></iframe>
+        <iframe src="https://clips.twitch.tv/embed?clip=ResoluteCautiousWaspJonCarnage-suotPFA4_XAaSm-E&parent=localhost" allowfullscreen></iframe>
+        <iframe src="https://clips.twitch.tv/embed?clip=FrailWonderfulBunnyFeelsBadMan-6RLrIiRbhy-kLm9m&parent=localhost" allowfullscreen></iframe>
+        <iframe src="https://clips.twitch.tv/embed?clip=ProductiveHonorableGoatDoritosChip-rHer95NC2rxeO-vC&parent=localhost" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MERCH & KEYS ===== -->
+  <section id="merch">
+    <h3>Merchandising & Keys</h3>
+    <p>
+      Muy pronto estarán disponibles productos oficiales del canal y keys para la comunidad.
+    </p>
+
+    <div style="margin-top:40px; display:flex; justify-content:center; gap:30px; flex-wrap:wrap;">
+      <div style="background:#111; border:1px solid #222; border-radius:20px; padding:30px; width:260px;">
+        <h4 style="margin-bottom:10px;">Merch Oficial</h4>
+        <p style="font-size:15px; opacity:0.8;">Poleras, hoodies y accesorios gamer.</p>
+        <span style="display:inline-block; margin-top:15px; padding:8px 16px; border-radius:20px; border:1px solid #a855f7; color:#a855f7;">Coming Soon</span>
+      </div>
+
+      <div style="background:#111; border:1px solid #222; border-radius:20px; padding:30px; width:260px;">
+        <h4 style="margin-bottom:10px;">Game Keys</h4>
+        <p style="font-size:15px; opacity:0.8;">Sorteos y acceso a juegos para la comunidad.</p>
+        <span style="display:inline-block; margin-top:15px; padding:8px 16px; border-radius:20px; border:1px solid #22c55e; color:#22c55e;">Coming Soon</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © 2021 - 2025 Dolapeee | Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
